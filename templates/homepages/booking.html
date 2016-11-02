@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+	{% load staticfiles %}
+	{% load bootstrap_calendar %}
+
+	{% block content %}
+	<div class="page-header">
+	{% bootstrap_controls 'from-inline pull-right' %}
+	
+	{% bootstrap_calendar '' %}
+
+	</div>
+	</div>
+	{% endblock %}
