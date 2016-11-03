@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_bootstrap_calendar',
     'homepages',
+    'django_forms_bootstrap',
 ]
 
 MIDDLEWARE_CLASSES = [
