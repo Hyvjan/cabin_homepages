@@ -6,6 +6,11 @@
 	{% block content %}
 	<div class="page-header">
 		<div class="row">
+
+	{% load bootstrap_calendar %}
+		{% bootstrap_controls 'optional-css-classes' %}
+		{% bootstrap_calendar 'optional-css-class' %}
+		{% bootstrap_calendar_css %}
 	{% bootstrap_calendar '' %}
 	</div>
 
@@ -23,4 +28,6 @@
 	</div>
 	</div>
 	</div>
+
+	
 	{% endblock %}

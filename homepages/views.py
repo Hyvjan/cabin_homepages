@@ -6,6 +6,10 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 
 # Create your views here.
+
+def landing(request):
+	return render_to_response('homepages/landing.html')
+
 def booking(request):
 	context=RequestContext(request)
 	if request.method == 'POST':
@@ -21,4 +25,4 @@ def booking(request):
 	return render_to_response('homepages/booking.html', {'form':form}, context)
 
 
-	#return render_to_response('homepages/booking.html', RequestContext(request))
+	
