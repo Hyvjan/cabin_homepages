@@ -1,6 +1,6 @@
 from django.shortcuts import render, render_to_response
 from django.template import Context, loader, RequestContext
-from homepages.models import Reservation
+from homepages.models import Reservation, Pictures
 from homepages.forms import ReservationForm
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
@@ -24,5 +24,7 @@ def booking(request):
 		form=ReservationForm()
 	return render_to_response('homepages/booking.html', {'form':form}, context)
 
-
+def lodge(request):
+	picture_list = Pictures.objects.all()
+	return render_to_response('homepages/lodge.html', {'picture_list': picture_list}, RequestContext(request))
 	

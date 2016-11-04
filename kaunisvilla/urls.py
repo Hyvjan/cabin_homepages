@@ -20,6 +20,7 @@ from homepages import views
 
 urlpatterns = [
 	url(r'^$', views.landing, name='landing'),
+	url(r'^lodge', views.lodge, name='lodge'),
     url(r'^admin/', admin.site.urls),
     url(r'^calendar/',include('django_bootstrap_calendar.urls')),
     url(r'^booking/', views.booking, name='booking'),

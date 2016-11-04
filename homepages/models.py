@@ -1,5 +1,5 @@
 from __future__ import unicode_literals
-
+from autoslug import AutoSlugField
 from django.db import models
 
 # Create your models here.
@@ -16,3 +16,11 @@ class Reservation(models.Model):
 
 	def __unicode__(self):
 		return self.last_name
+
+class Pictures(models.Model):
+	picture = models.TextField()
+	file_up = models.FileField(blank=True)
+	url = AutoSlugField(populate_from='picture', editable=True,unique=True, blank=True)
+
+	def __unicode__(self):
+		return self.picture
