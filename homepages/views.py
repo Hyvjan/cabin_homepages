@@ -25,6 +25,5 @@ def booking(request):
 	return render_to_response('homepages/booking.html', {'form':form}, context)
 
 def lodge(request):
-	picture_list = Pictures.objects.all()
-	return render_to_response('homepages/lodge.html', {'picture_list': picture_list}, RequestContext(request))
+	return render_to_response('homepages/lodge.html')
 	
