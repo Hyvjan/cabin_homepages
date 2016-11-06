@@ -26,4 +26,4 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^calendar/',include('django_bootstrap_calendar.urls')),
     url(r'^booking/', views.booking, name='booking'),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
