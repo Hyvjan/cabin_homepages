@@ -8,7 +8,7 @@
 		<meta name="author" content="">
 		
 
-		<title>Jannen kotisivut</title>
+		<title>Kaunisvilla</title>
 		
 		{% load staticfiles %}
 		{% load bootstrap_calendar %}
@@ -32,16 +32,18 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href='/'>Frontpage</a></li>
-						<li><a href='/booking'>Booking/</a></li>
+						<li><a href='/'>Front page</a></li>
+						<li><a href='/booking'>Booking</a></li>
 						<li><a href='/lodge'>Lodge</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
-		<div class="container">
+		<div class="container-fluid">
+				
 		<div class="padded">
+
 
 					{% if messages %}
     <ul class="messages">
@@ -53,15 +55,13 @@
 
 						{% block content %}
 						{% endblock %}
-					</div>
-				</div>
-				</div>
+		</div>
+						
+		</div>
+			
 
 		<div class="panel-footer">
-			<center>
-			<p>Contact webmaster:</p>
-			<p>  janne.j.hyvonen@gmail.com  </p>
-			</center>
+			<center><h1>Kaunisvilla</h1></center>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
