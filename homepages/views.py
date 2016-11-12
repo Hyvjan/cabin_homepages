@@ -28,7 +28,5 @@ def lodge(request):
 	pictures = Pictures.objects.all()
 	return render_to_response('homepages/lodge.html',{'pictures':pictures}, RequestContext(request))
 
-"""
-def lodge(request):
-	return render_to_response('homepages/lodge.html')
-"""	
+def activities(request):
+	return render_to_response('homepages/activities.html')
