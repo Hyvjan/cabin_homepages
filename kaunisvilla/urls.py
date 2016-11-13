@@ -27,4 +27,6 @@ urlpatterns = [
     url(r'^calendar/',include('django_bootstrap_calendar.urls')),
     url(r'^booking/', views.booking, name='booking'),
     url(r'^activities/', views.activities, name='activities'),
+    url(r'^terms/', views.terms, name='terms'),
+    url(r'^nature/', views.nature, name='nature'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
