@@ -19,8 +19,9 @@ from django.contrib import admin
 from homepages import views
 from django.conf.urls.static import static
 from django.conf import settings
+from django.conf.urls.i18n import i18n_patterns
 
-urlpatterns = [
+urlpatterns = i18n_patterns(
 	url(r'^$', views.landing, name='landing'),
 	url(r'^lodge', views.lodge, name='lodge'),
     url(r'^admin/', admin.site.urls),
@@ -29,4 +30,4 @@ urlpatterns = [
     url(r'^activities/', views.activities, name='activities'),
     url(r'^terms/', views.terms, name='terms'),
     url(r'^nature/', views.nature, name='nature'),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+)+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
