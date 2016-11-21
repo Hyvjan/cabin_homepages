@@ -4,6 +4,8 @@ from homepages.models import Reservation, Pictures,NaturePictures
 from homepages.forms import ReservationForm
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
+from kaunisvilla import settings
+from django.core.mail import send_mail
 
 # Create your views here.
 
@@ -16,7 +18,16 @@ def booking(request):
 		form = ReservationForm(request.POST, request.FILES)
 		if form.is_valid():
 			form.save(commit=True)
-			messages.add_message(request, messages.INFO, "Postauksesi on lisatty.")
+			messages.add_message(request, messages.INFO, "Your booking request has been sent. Thank You.")
+			arrival_date = form.cleaned_data['arrival_date']
+			end_date = form.cleaned_data['end_date']
+			first_name = form.cleaned_data['first_name']
+			last_name = form.cleaned_data['last_name']
+			email = form.cleaned_data['email']
+			message = form.cleaned_data['message']
+			viesti = "{}+:+{}+:+{}+:+{}+:+{}+:+{}".format(arrival_date,end_date,first_name.encode('utf-8'),last_name.encode('utf-8'),email.encode('utf-8'),message.encode('utf-8'))
+			send_mail('Varauspyynto Kaunisvillaan', viesti, settings.EMAIL_HOST_USER,
+         	['janne.j.hyvonen@gmail.com'], fail_silently=False)
 			return HttpResponseRedirect('/booking')
 		else:
 			print form.errors

@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
-from passwords import SALAINEN_SANA
+from passwords import SALAINEN_SANA, EMAIL_ADDRESS, EMAIL_PASSWORD
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -125,3 +125,12 @@ USE_TZ = True
 MEDIA_ROOT = '/home/janne/Documents/kaunisvilla/kaunisvilla/homepages/media'
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
+
+#email settings
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_PASSWORD = EMAIL_PASSWORD #my gmail password
+EMAIL_HOST_USER = EMAIL_ADDRESS #my gmail username
+EMAIL_PORT = 587
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
