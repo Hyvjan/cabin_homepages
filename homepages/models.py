@@ -24,3 +24,11 @@ class Pictures(models.Model):
 
 	def __unicode__(self):
 		return self.picture
+
+class NaturePictures(models.Model):
+	picture_description = models.TextField()
+	file_up = models.FileField(blank=True)
+	url = AutoSlugField(populate_from='picture_description', editable=True,unique=True, blank=True)
+
+	def __unicode__(self):
+		return self.picture_description

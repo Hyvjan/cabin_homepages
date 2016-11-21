@@ -1,6 +1,6 @@
 from django.shortcuts import render, render_to_response
 from django.template import Context, loader, RequestContext
-from homepages.models import Reservation, Pictures
+from homepages.models import Reservation, Pictures,NaturePictures
 from homepages.forms import ReservationForm
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
@@ -30,3 +30,10 @@ def lodge(request):
 
 def activities(request):
 	return render_to_response('homepages/activities.html')
+
+def terms(request):
+	return render_to_response('homepages/terms.html')
+
+def nature(request):
+	pictures_nature = NaturePictures.objects.all()
+	return render_to_response('homepages/nature.html',{'pictures_nature':pictures_nature}, RequestContext(request))

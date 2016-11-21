@@ -1,7 +1,7 @@
 import django_bootstrap_calendar
 from django.contrib import admin
 from django_bootstrap_calendar.models import CalendarEvent
-from homepages.models import Reservation, Pictures
+from homepages.models import Reservation, Pictures, NaturePictures
 
 class CalendarEventAdmin(admin.ModelAdmin):
     list_display = ["title", "url", "css_class", "start", "end"]
@@ -21,3 +21,9 @@ class PicturesAdmin(admin.ModelAdmin):
     picture_filler = ["picture"]
 
 admin.site.register(Pictures, PicturesAdmin)
+
+class NaturePicturesAdmin(admin.ModelAdmin):
+    pictures_display = ['picture_description', 'file_up']
+    picture_filler = ["picture_descrition"]
+
+admin.site.register(NaturePictures, NaturePicturesAdmin)
