@@ -8,15 +8,12 @@
 		<meta name="author" content="">
 		
 
-		<title>Jannen kotisivut</title>
+		<title>Kaunisvilla</title>
 		
 		{% load staticfiles %}
-
-		<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 		{% load bootstrap_calendar %}
-		{% bootstrap_controls 'optional-css-classes' %}
-		{% bootstrap_calendar 'optional-css-class' %}
-		{% bootstrap_calendar_css %}
+		<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
 		<link rel="stylesheet" href="{% static 'css/homepages.css' %}">
 	</head>
 
@@ -35,17 +32,19 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="{% url 'booking' %}">Index</a></li>
-						<li><a href='/blog'>blogi</a></li>
-						<li><a href='/cv'>CV</a></li>
-						<li><a href='/projects'>referenssiprojektit</a></li>
+						<li><a href='/'>Front page</a></li>
+						<li><a href='/booking'>Booking</a></li>
+						<li><a href='/lodge'>Lodge</a></li>
+						<li><a href='/activities'>Activities</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
 		<div class="container-fluid">
+				
 		<div class="padded">
+
 
 					{% if messages %}
     <ul class="messages">
@@ -57,15 +56,13 @@
 
 						{% block content %}
 						{% endblock %}
-					</div>
-				</div>
-				</div>
+		</div>
+						
+		</div>
+			
 
 		<div class="panel-footer">
-			<center>
-			<p>Contact webmaster:</p>
-			<p>  janne.j.hyvonen@gmail.com  </p>
-			</center>
+			<center><h1>Kaunisvilla</h1></center>
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

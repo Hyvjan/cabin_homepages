@@ -1,0 +1,7 @@
+Django==1.9
+argparse==1.2.1
+django-autoslug==1.9.3
+django-bootstrap-calendar==0.1.0
+django-forms-bootstrap==3.0.0
+jsmin==2.2.1
+wsgiref==0.1.2

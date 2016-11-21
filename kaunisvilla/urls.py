@@ -17,9 +17,14 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from homepages import views
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
+	url(r'^$', views.landing, name='landing'),
+	url(r'^lodge', views.lodge, name='lodge'),
     url(r'^admin/', admin.site.urls),
     url(r'^calendar/',include('django_bootstrap_calendar.urls')),
     url(r'^booking/', views.booking, name='booking'),
-]
+    url(r'^activities/', views.activities, name='activities'),
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

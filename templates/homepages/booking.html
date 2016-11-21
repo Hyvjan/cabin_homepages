@@ -1,13 +1,46 @@
 {% extends 'base.html' %}
 	{% load staticfiles %}
 	{% load bootstrap_calendar %}
+	{% load bootstrap_tags %}
 
 	{% block content %}
 	<div class="page-header">
-	{% bootstrap_controls 'from-inline pull-right' %}
-	
+
+	<h1><center>Booking</center></h1>
+	<br>
+	<br>
+	<p class="text-muted">Below You can find calendar showing current bookings as a red
+	circle in the calendar. 
+	<br>
+	<br>
+	Below the calendar is a form for making a query to book the lodge. </p>
+	<br>
+	<br>
+
+
+	{% load bootstrap_calendar %}
+		{% bootstrap_controls 'optional-css-classes' %}
+		{% bootstrap_calendar 'optional-css-class' %}
+		{% bootstrap_calendar_css %}
 	{% bootstrap_calendar '' %}
+
+	<br>
+	<br>
+
+	<div class="row">
+
+	<form id="reservation_form" method="post" action="booking/"
+		enctype="multipart/form-data">
+	{% csrf_token %}
+
+	{{ form| as_bootstrap }}
+
+	<input type="submit" name="send" value="Save">
+	</form>
 
 	</div>
 	</div>
+	</div>
+
+	
 	{% endblock %}
