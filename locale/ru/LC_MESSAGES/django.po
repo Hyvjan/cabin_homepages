@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-17 21:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:14
+msgid "Normal"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:15
+msgid "Warning"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:16
+msgid "Info"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:17
+msgid "Success"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:18
+msgid "Inverse"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:19
+msgid "Special"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:20
+msgid "Important"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:22
+msgid "Title"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:23
+msgid "URL"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:24
+msgid "CSS Class"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:26
+msgid "Start Date"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/models.py:27
+msgid "End Date"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/templates/django_bootstrap_calendar/partial/calendar_controls.html:5
+msgid "Prev"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/templates/django_bootstrap_calendar/partial/calendar_controls.html:7
+msgid "Next"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/templates/django_bootstrap_calendar/partial/calendar_controls.html:10
+msgid "Year"
+msgstr ""
+
+#: django-bootstrap-calendar/build/lib.linux-x86_64-2.7/django_bootstrap_calendar/templates/django_bootstrap_calendar/partial/calendar_controls.html:11
+msgid "Month"
+msgstr ""
+
+#: kaunisvilla/settings.py:127
+msgid "English"
+msgstr ""
+
+#: kaunisvilla/settings.py:128
+msgid "Finnish"
+msgstr ""
+
+#: kaunisvilla/settings.py:129
+msgid "French"
+msgstr ""
+
+#: kaunisvilla/settings.py:130
+msgid "Russian"
+msgstr ""
+
+#: templates/homepages/landing.html:13
+msgid "WELCOME"
+msgstr ""
+
+#: templates/homepages/landing.html:15
+msgid "Luxury in Lapland"
+msgstr ""
+
+#: templates/homepages/landing.html:18
+msgid ""
+"\n"
+"Welcome to Lapland. This website offers a fantastic holiday destination in "
+"the far north of Finland. Built in 2006, to a bold architectural design – it "
+"is located next to one of the premier ski resorts inside the arctic circle.\n"
+"The Villa can accommodate up to 8 + 2 people in absolute luxury. Within easy "
+"reach of the airport, and with the option of having all the hassle catering "
+"and cleaning taken care of – you can relax; enjoy the snow, and entertain in "
+"style. Whatever the reason the Kaunisvilla offers all you could ask from "
+"your stay in Lapland..\n"
+"<br>\n"
+"<br>\n"
+"So..please feel welcome to look around – and if you like what you see, then "
+"get in touch – and book yourself a slice of Arctic heaven!\n"
+"<br>\n"
+"<br>\n"
+" \n"
+"\n"
+"The Kaunisvilla (Kaunis=Pretty in Finnish) is owned in partnership by two "
+"Finnish Families. Like most Finns – they know how to enjoy winter sports, "
+"and frozen landscapes. It has been their ultimate dream to build this lodge. "
+"It has taken many years of careful planning, research to find the site, and "
+"significant financial outlay to realise their dream.\n"
+"<br>\n"
+"<br>\n"
+"The owners always reserve a few weeks every year to spend at the lodge – and "
+"ensure that the accommodation meets their highest expectation.\n"
+"<br>\n"
+"<br>\n"
+"When you book time at the Kaunisvilla – all your hosting requirements – from "
+"the collection at the airport – to the cuisine and friendly domestic service "
+"– will be handled by local Lapland guides.\n"
+"<br>\n"
+"<br>\n"
+"But the booking – and contact through this site- is all handled by the "
+"owners, and you can be assured that you are dealing with committed, "
+"knowledgeable people, who place the highest value in making your stay – "
+"simply the best.\n"
+msgstr ""
